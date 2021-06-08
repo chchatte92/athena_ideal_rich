@@ -1,1 +1,1 @@
-# athena_idea_rich
+# ATHENA@EIC ideal forward RICH detector
