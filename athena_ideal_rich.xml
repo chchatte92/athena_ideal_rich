@@ -1,0 +1,31 @@
+<lccdd>
+
+  <includes>
+    <gdmlFile  ref="elements.xml"/>
+    <gdmlFile  ref="materials.xml"/>
+  </includes>
+
+  <constant name="world_x" value="10*m"/>
+  <constant name="world_y" value="10*m"/>
+  <constant name="world_z" value="10*m"/>
+
+  <detectors>
+
+    <detector id="0" name="athena_ideal_rich" type="athena_ideal_rich">
+    </detector>
+
+  </detectors>
+
+ <readouts>
+    <readout name="athena_ideal_rich_hits">
+      <segmentation type="CartesianGridXY" grid_size_x="3*mm" grid_size_y="3*mm" />
+      <id>system:8,barrel:2,layer:4,module:12,sensor:2,x:32:-16,y:-16</id>
+      <!--
+      <segmentation type="PolarGridRPhi" grid_size_phi="3.0*degree" grid_size_r="5.0*cm"/>
+      <id>system:5,barrel:3,layer:4,module:5,r:32:-16,phi:-16</id>
+      -->
+    </readout>
+ </readouts>
+
+
+</lccdd>
